@@ -9,29 +9,29 @@
   </head>
   <body>
     <div class="frame">
-      <div class="display">
-        <p id="answer"></p>
-      </div>
+      <input id="output" type="text">
       <div class="keys">
-        <button class="key-operator" type="button" data-action="add">+</button>
-        <button class="key-operator" type="button" data-action="subtract">-</button>
-        <button class="key-operator" type="button" data-action="divide">/</button>
-        <button class="key-operator" type="button" data-action="multiply">*</button>
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">0</button>
-        <button type="button" data-action="decimal">.</button>
-        <button data-action="clear">AC</button>
-        <button class="key-equal" type="button" data-action="equals">=</button>
-      </div>
 
+        <button class="key-operator" type="button" id ="add">+</button>
+        <button class="key-operator" type="button" id ="subtract">-</button>
+        <button class="key-operator" type="button" id ="divide">/</button>
+        <button class="key-operator" type="button" id ="multiply">*</button>
+        <button value="7" type="button">7</button>
+        <button value="8" type="button">8</button>
+        <button value="9" type="button">9</button>
+        <button value="4" type="button">4</button>
+        <button value="5" type="button">5</button>
+        <button value="6" type="button">6</button>
+        <button value="1" type="button">1</button>
+        <button value="2" type="button">2</button>
+        <button value="3" type="button">3</button>
+        <button value="0" type="button">0</button>
+        <button value="." type="button">.</button>
+        
+      </div>
+      <button class="clear">AC</button>
+        <button class="key-equal" type="button">=</button>
+      
     </div>
   </body>
   <script src="script.js" type="text/javascript">

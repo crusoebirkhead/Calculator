@@ -1,17 +1,21 @@
-
-function add (a, b) {
-	 return a + b
+document.getElementById('add').onclick = operand;
+document.getElementById('subtract').onclick = operand;
+document.getElementById('multiply').onclick = operand;
+document.getElementById('divide').onclick = operand;
+let operator = ''
+function add (num1, num2) {
+	 return num1 + num2
 }
 
-function subtract (a, b) {
- return a - b
+function subtract (num1, num2) {
+ return num1 - num2
 }
 
-function multiply(a, b){
-	return a * b
+function multiply(num1, num2){
+	return num1 * num2
 }
-function power(a, b) {
-	return a ** b
+function power(num1, num2) {
+	return num1 ** num2
 }
 
 function factorial(num) {
@@ -25,4 +29,30 @@ function factorial(num) {
 	return answer
 }
 
+function operand(){
+	operator = this.id;
+	console.log(operator)
+}
 
+function operate(a, b){
+
+}
+
+document.querySelector('.keys')
+  .addEventListener('click', event => {
+    let target = event.target;
+    if (target.matches('button')) {
+      let value = target.innerHTML
+      
+      document.querySelector('#output').value += value
+    }
+  });
+
+  document.querySelector('.clear')
+  .addEventListener('click', event => {
+	document.querySelector('#output').value = ''
+	operator = ''
+	num1 = ''
+	num2 = ''
+
+  })
